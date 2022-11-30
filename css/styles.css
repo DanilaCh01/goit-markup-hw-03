@@ -21,6 +21,30 @@ body {
     background: var(--primary-white-color) ;
 }
 
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    outline: 0;
+    outline-offset: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+}
+
+
 .logo-1-1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -56,7 +80,11 @@ body {
     letter-spacing: 0.02em;
 }
 
-.nav-links:hover {
+.nav-links:hover, .nav-links:focus {
+    color: var(--accent-color);
+}
+
+.nav-links.current {
     color: var(--accent-color);
 }
 
@@ -86,10 +114,6 @@ body {
 }
 
 .tel {
-}
-
-.header {
-    border: 1px solid #ECECEC;
 }
 
 .main-content {
@@ -146,6 +170,7 @@ body {
 }
 
 .uvaga {
+    font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -161,6 +186,7 @@ body {
 }
 
 .punct {
+    font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -177,6 +203,7 @@ body {
 }
 
 .plan {
+    font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -193,6 +220,7 @@ body {
 }
 
 .tech {
+    font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -390,7 +418,11 @@ ul {
     color: var(--accent-color);
 }
 
-.adress-kiyv {
+.address {
+    font-style: normal;
+}
+
+.address-kiyv {
     line-height: 1.714;
     text-decoration: none;
 
