@@ -10,6 +10,17 @@
     --accent-secondary-color : #188CE8;
 }
 
+*, ::after ::before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding:0;
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
@@ -17,8 +28,71 @@ body {
     background-color: var(--primary-white-color);
 }
 
-.menu {
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: var(--primary-white-color) ;
+}
+
+.nav>.nav-container {
+    display: flex;
+    padding: 0px;
+
+}
+
+.nav>.nav-container>.item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+section {
+    display: block;
+}
+
+.container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header>.container {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.head, .head-1 {
+    background-color: var(--primary-white-color);
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--footer-bg-color);
+}
+
+.feature {
+    background-color: var(--primary-white-color);
+    
+}
+
+.osobennosti-list {
+    display: flex;
+    justify-content:space-between;
+}
+
+.osobennosti-list :not(:last-child){
+margin-right: 30px;
+}
+.delaem {
+    background-color: gray;
+}
+
+.team-container {
+    background-color: var(--secondary-bg-color);
 }
 
 .header {
@@ -44,6 +118,16 @@ body {
     position: absolute;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-container {
+    display: flex;
+}
+
 
 .logo-1-1 {
     font-family: 'Raleway', sans-serif;
@@ -51,6 +135,7 @@ body {
     font-size: 26px;
     line-height: 1.192;
     text-decoration: none;
+    margin-right: 93px;
 
     letter-spacing: 0.03em;
 
@@ -88,6 +173,14 @@ body {
     color: var(--accent-color);
 }
 
+
+
+.nav-container {
+    display: flex;
+}
+
+
+
 .studio {
 }
 
@@ -99,7 +192,21 @@ body {
 
 
 
-.mail-tel-links {
+.contacts-container {
+    display: flex;
+    align-items: center;
+}
+
+.contacts-container>.item:not(:last-child) {
+    padding-left: 0px;
+    margin-right: 50px;
+}
+
+.contacts-container .mail-tel-links {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     line-height: 1.142;
     letter-spacing: 0.02em;
@@ -117,10 +224,12 @@ body {
 }
 
 .main-content {
+    padding: 200px 0px;
     background: var(--footer-bg-color);
 }
 
 .buisness {
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.363;
@@ -133,6 +242,9 @@ body {
 }
 
 .button-order {
+    margin-right:auto;
+    margin-left:auto;
+
     width: 216px;
     height: 50px;
     font-family: inherit;
@@ -160,16 +272,46 @@ body {
 }
 
 .main-1 {
+    background-color: var(--primary-white-color);
+    padding: 94px 0px;
 }
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-1>.container>.list {
+    display: flex;
+}
+
+.main-1>.container>.list .osobennosti:not(:last-child) {
+    margin-right:30px;
+}
+
+.main-1 .list {
+
+}
+
 
 .hide {
     color: var(--primary-white-color);
 }
 
 .osobennosti {
+    width: 270px;
+
 }
 
 .uvaga {
+    margin-bottom: 10px;
+
     font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.03em;
@@ -179,6 +321,7 @@ body {
 }
 
 .text1 {
+    
     line-height: 1.714;
     letter-spacing: 0.03em;
 
@@ -186,6 +329,8 @@ body {
 }
 
 .punct {
+    margin-bottom: 10px;
+
     font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.03em;
@@ -203,6 +348,8 @@ body {
 }
 
 .plan {
+    margin-bottom: 10px;
+
     font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.03em;
@@ -220,6 +367,8 @@ body {
 }
 
 .tech {
+    margin-bottom: 10px;
+
     font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.03em;
@@ -237,9 +386,22 @@ body {
 }
 
 .main-2 {
+    background-color: var(--primary-white-color);
+    padding-bottom: 94px;
+}
+
+.photo-list {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-list :not(:last-child) {
+    margin-right:30px;
 }
 
 .chto-delaem {
+    margin-bottom: 50px;
+
     font-size: 36px;
     line-height: 1.166;
     text-align: center;
@@ -248,20 +410,25 @@ body {
     color: var(--primary-text-color);
 }
 
-.photo-1 {
+.photos {
+    display: block;
 }
-
-.photo-2 {
-}
-
-.photo-3 {
-}
-
 .main-3 {
     background: var(--secondary-bg-color);
+    padding: 94px 0px;
 }
 
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
 .our-team-text {
+    margin-bottom: 50px;
+
     font-size: 36px;
     line-height: 1.166;
     text-align: center;
@@ -279,24 +446,36 @@ ul {
 }
 
 .team-1 {
+    width: 270px;
+    height: 368px;
+
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background: var(--primary-white-color);
 }
 
 .team-2 {
+    width: 270px;
+    height: 368px;
+
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background: var(--primary-white-color);
 }
 
 .team-3 {
+    width: 270px;
+    height: 368px;
+
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background: var(--primary-white-color);
 }
 
 .team-4 {
+    width: 270px;
+    height: 368px;
+
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background: var(--primary-white-color);
@@ -307,6 +486,8 @@ ul {
 }
 
 .igor-small {
+    margin-top: 30px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.187;
@@ -318,6 +499,8 @@ ul {
 }
 
 .igor-work {
+    margin-top: 10px;
+
     font-size: 16px;
     line-height: 1.187;
 
@@ -331,6 +514,8 @@ ul {
 }
 
 .olga-small {
+    margin-top: 30px;
+
     font-weight: 500px;
     font-size: 16px;
     line-height: 1.187;
@@ -342,6 +527,8 @@ ul {
 }
 
 .olga-work {
+    margin-top: 10px;
+
     font-size: 16px;
     line-height: 1.187;
 
@@ -355,6 +542,8 @@ ul {
 }
 
 .kolya-small {
+    margin-top: 30px;
+
     font-weight: 500px;
     font-size: 16px;
     line-height: 1.187;
@@ -366,6 +555,8 @@ ul {
 }
 
 .kolya-work {
+    margin-top: 10px;
+
     font-size: 16px;
     line-height: 1.187;
 
@@ -379,6 +570,8 @@ ul {
 }
 
 .misha-small {
+    margin-top: 30px;
+
     font-weight: 500px;
     font-size: 16px;
     line-height: 1.187;
@@ -390,6 +583,8 @@ ul {
 }
 
 .misha-work {
+    margin-top: 10px;
+
     font-size: 16px;
     line-height: 1.187;
 
@@ -403,12 +598,31 @@ ul {
     background: var(--footer-bg-color);
 }
 
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-container-second {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container-second :not(:last-child) {
+    margin-bottom: 9px;
+}
+
+
 .logo-2-1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.192;
     text-decoration: none;
+    margin-bottom: 20px;
 
     letter-spacing: 0.03em;
     color: var(--primary-white-color);
@@ -420,6 +634,7 @@ ul {
 
 .address {
     font-style: normal;
+    
 }
 
 .address-kiyv {
@@ -455,8 +670,9 @@ ul {
 
 
 .hero-portfolio {
+    padding: 94px 0px;
+    background-color: var(--primary-white-color);
 }
-
 .general-filters {
     padding:0;
     margin:0;
@@ -483,9 +699,9 @@ ul {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: ничего;
+    line-height: calc(26/16);
     padding:0;
-    margin:0;
+    margin:0px;
     
     text-align: center;
     letter-spacing: 0.03em;
@@ -498,18 +714,51 @@ ul {
 }
 
 .filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
 }
 
+.filters .item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.project-ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-ul>.item {
+    display: flex;
+}
+
+.project .item:nth-child(3) {
+    flex-wrap: wrap;
+    margin-right:30px;
+}
+
+.item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+}
+
+.item:not(:nth-child(3n + 3)) {
+    margin-right: 30px;
+}
 
 .filter-1 {
+    padding: 6px 25px;
 }
 .filter-2 {
+    padding: 6px 22px;
 }
 .filter-3 {
+    padding: 6px 22px;
 }
 .filter-4 {
+    padding: 6px 22px;
 }
 .filter-5 {
+    padding: 6px 22px;
 }
 
 .text-button-1 {
@@ -532,10 +781,29 @@ ul {
     margin: 0;
 }
 
-.general-projects {
+
+.project-card {
     box-sizing: border-box;
     background: var(--primary-white-color);
     border: 1px solid #EEEEEE;
+}
+
+.project-card:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+}
+
+.project-card:not(:nth-child(3n + 3)) {
+    margin-right: 30px;
+}
+
+.hero-portfolio>.container>.project-ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-ul>.item {
+    margin-right: 20px ;
 }
 
 .box-link {
@@ -578,12 +846,15 @@ ul {
 
 }
 
-
+.project-text-general {
+    padding: 20px 24px;
+}
 
 .general-projects-text {
     font-size: 18px;
-    line-height: ничего;
+    line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom:4px;
     
     color: var(--primary-text-color);
 }
@@ -591,7 +862,7 @@ ul {
 
 .general-projects-description {
     font-size: 16px;
-    line-height: ничего;
+    line-height: 1.875;
     letter-spacing: 0.03em;
         
     color: var(--secondary-text-color);
