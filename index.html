@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Студія</title>
   </head>
@@ -19,13 +23,21 @@
     <header class="header">
       <div class="container">
         <nav class="nav">
-            <div class="logo-container">
-          <a href="./index.html" class="logo-1-1"><span class="logo-1-2">Web</span>Studio</a>
-            </div>
+          <div class="logo-container">
+            <a href="./index.html" class="logo-1-1"
+              ><span class="logo-1-2">Web</span>Studio</a
+            >
+          </div>
           <ul class="nav-container">
-            <li class="item"><a href="./index.html" class="nav-links current">Студія</a></li>
-            <li class="item"><a href="./portfolio.html" class="nav-links">Портфоліо</a></li>
-            <li class="item"><a href="./contacts.html" class="nav-links">Контакти</a></li>
+            <li class="item">
+              <a href="./index.html" class="nav-links current">Студія</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="nav-links">Портфоліо</a>
+            </li>
+            <li class="item">
+              <a href="./contacts.html" class="nav-links">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="contacts-container">
@@ -40,7 +52,7 @@
             >
           </li>
         </ul>
-    </div>
+      </div>
     </header>
     <!--main-->
     <main>
@@ -57,41 +69,40 @@
         <div class="container">
           <h2 class="visually-hidden">Наші особливості</h2>
           <ul class="list">
-              <li class="osobennosti">
-                <h3 class="uvaga">Увага до деталей</h3>
-                <p class="text1">
-                  Ідейні міркування, і навіть початок повсякденної роботи з
-                  формування позиції.
-                </p>
-              </li>
-              <li class="osobennosti">
-                <h3 class="punct">Пунктуальність</h3>
-                <p class="text2">
-                  Завдання організації, особливо рамки і місце навчання кадрів
-                  тягне у себе.
-                </p>
-              </li>
-              <li class="osobennosti">
-                <h3 class="plan">Планування</h3>
-                <p class="text3">
-                  Так само консультація з широким активом значною мірою
-                  зумовлює.
-                </p>
-              </li>
-              <li class="osobennosti">
-                <h3 class="tech">Сучасні технології</h3>
-                <p class="text4">
-                  Значимість цих проблем настільки очевидна, що реалізація
-                  планових завдань.
-                </p>
-              </li>
+            <li class="osobennosti">
+              <h3 class="uvaga">Увага до деталей</h3>
+              <p class="text1">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="osobennosti">
+              <h3 class="punct">Пунктуальність</h3>
+              <p class="text2">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="osobennosti">
+              <h3 class="plan">Планування</h3>
+              <p class="text3">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="osobennosti">
+              <h3 class="tech">Сучасні технології</h3>
+              <p class="text4">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
           </ul>
         </div>
       </section>
       <section class="main-2">
-        <h2 class="chto-delaem">Чим ми займаємося</h2>
-        <ul>
-          <div class="container photo-list">
+        <div class="container">
+          <h2 class="chto-delaem">Чим ми займаємося</h2>
+          <ul class="photo-list">
             <li>
               <img
                 src="./images/imgdesktop.jpg"
@@ -116,56 +127,64 @@
                 alt="Дизайнерські рішення"
               />
             </li>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </section>
       <!-- 11111111111111111-->
       <section class="main-3">
-        <h2 class="our-team-text">Наша команда</h2>
-        <ul class="team">
-          <div class="container cards">
-            <li class="team-1">
+        <div class="container">
+          <h2 class="our-team-text">Наша команда</h2>
+          <ul class="container cards">
+            <li class="teammate">
               <img
                 src="./images/imgigor.jpg"
                 class="igor"
                 width="270"
                 alt="Фото Ігора Дем'яненка"
               />
-              <h3 class="igor-small">Ігор Дем'яненко</h3>
-              <p class="igor-work">Product Designer</p>
+              <div class="teammate-padding">
+                <h3 class="igor-small">Ігор Дем'яненко</h3>
+                <p class="igor-work">Product Designer</p>
+              </div>
             </li>
-            <li class="team-2">
+            <li class="teammate">
               <img
                 src="./images/imgolga.jpg"
                 class="olga"
                 width="270"
                 alt="Фото Ольги Рєпіни"
               />
-              <h3 class="olga-small">Ольга Рєпіна</h3>
-              <p class="olga-work">Frontend Developer</p>
+              <div class="teammate-padding">
+                <h3 class="olga-small">Ольга Рєпіна</h3>
+                <p class="olga-work">Frontend Developer</p>
+              </div>
             </li>
-            <li class="team-3">
+            <li class="teammate">
               <img
                 src="./images/imgkolya.jpg"
                 class="kolya"
                 width="270"
                 alt="Фото Миколи Тарасова"
               />
-              <h3 class="kolya-small">Микола Тарасов</h3>
-              <p class="kolya-work">Marketing</p>
+              <div class="teammate-padding">
+                <h3 class="kolya-small">Микола Тарасов</h3>
+                <p class="kolya-work">Marketing</p>
+              </div>
             </li>
-            <li class="team-4">
+            <li class="teammate">
               <img
                 src="./images/imgmisha.jpg"
                 class="misha"
                 width="270"
                 alt="Фото Михайла Єрмакова"
               />
-              <h3 class="misha-small">Михайло Єрмаков</h3>
-              <p class="misha-work">UI Designer</p>
+              <div class="teammate-padding">
+                <h3 class="misha-small">Михайло Єрмаков</h3>
+                <p class="misha-work">UI Designer</p>
+              </div>
             </li>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </section>
     </main>
 
@@ -176,28 +195,26 @@
           ><span class="logo-2-2">Web</span>Studio</a
         >
         <address class="address">
-          <ul>
-            <div class="footer-container-second">
-              <li>
-                <a
-                  href="https://goo.gl/maps/ajY1YeX4YkHEF1Sb7"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="address-kiyv"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li>
-                <a href="mailto:info@devstudio.com" class="footer-links"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a href="tel:+380961111111" class="footer-links"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-            </div>
+          <ul class="footer-ul">
+            <li>
+              <a
+                href="https://goo.gl/maps/ajY1YeX4YkHEF1Sb7"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="address-kiyv"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="footer-links"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="footer-links"
+                >+38 096 111 11 11</a
+              >
+            </li>
           </ul>
         </address>
       </div>
